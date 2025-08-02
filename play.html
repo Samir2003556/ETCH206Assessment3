@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Environments – Infant &amp; Toddler Education</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Infant &amp; Toddler Education</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="promoting.html">Promoting Wellbeing</a></li>
+        <li><a href="cognitive.html">Cognitive</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="emotional.html">Emotional</a></li>
+        <li><a href="language.html">Language &amp; Literacy</a></li>
+        <li><a href="perceptual.html">Perceptual</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Creating Play Environments</h1>
+    <p>
+      Designing the play environments responsively and effectively is necessary to promote the development and wellbeing of the infants and the toddlers. It is at this point that children receive all their learning through sensation, social traits and action (Berk, 2009). One key factor contained in the Early Years Learning Framework (DEEWR, 2016) is that the environment plays a major role in cultivating a sense of belonging and identity.
+    </p>
+    <p>
+      The Reggio Emilia-inspired practices refer to the environment as the third teacher that allows exploring and creativity due to flexible spaces and open-ended materials (Garvis et al., 2019). Teachers may amplify growth through resources that are exorbitant in the senses, comfortable furniture, and calm spaces to foster emotional safety.
+    </p>
+    <p>
+      Cultural responsiveness is important as well, children need to see and recognize something familiar and associated with the community to feel secure and in tune with the environment (Kaywork, 2020). Blocks, fabrics, and natural items are the materials that provide different types of play styles (Petty, 2016). 
+
+    </p>
+    <img src="images/play_environment.png" alt="Illustration of a playful environment" style="width:100%; height:auto; border-radius:8px; margin-bottom:1rem;">
+    <h2>Guidelines for Effective Play Spaces</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Aspect</th>
+          <th>Guidelines</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Safety &amp; Accessibility</td>
+          <td>Use sturdy, low furniture; ensure clear pathways; provide soft mats and comfy surfaces for infants learning to crawl and walk; remove hazards and create a warm, inviting atmosphere.</td>
+        </tr>
+        <tr>
+          <td>Natural Materials</td>
+          <td>Offer baskets of shells, pinecones, wood blocks and fabrics; avoid plastic toys in favour of loose parts that stimulate the senses
+            <sup><a href="#footnote-5" data-tether-id="8779840127115†L52-L77">[5]</a></sup>.</td>
+        </tr>
+        <tr>
+          <td>Sensory Experiences</td>
+          <td>Activate all senses with water and sand tables, light panels, textured boards, gentle music and objects that engage touch, sight, sound and smell.</td>
+        </tr>
+        <tr>
+          <td>Diversity &amp; Culture</td>
+          <td>Display photographs of children’s families, books in multiple languages and artefacts from different cultures to foster inclusion
+            <sup><a href="#footnote-7" data-tether-id="510548272031228†L58-L67">[7]</a></sup>.</td>
+        </tr>
+        <tr>
+          <td>Quiet &amp; Active Zones</td>
+          <td>Create cosy nooks for rest and reading alongside open spaces for gross‑motor play and music. Offer both calm corners and energetic zones to suit different needs.</td>
+        </tr>
+        <tr>
+          <td>Open‑ended &amp; Loose Parts</td>
+          <td>Provide loose parts such as blocks, fabrics and natural items. Purposeful, uncluttered design encourages autonomy, creativity and agency by inviting children to explore materials in their own way.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Materials Mix</h2>
+    <p>
+      This doughnut chart shows a balanced mix of materials for a play environment, emphasising natural
+      resources while still including some manufactured toys and sensory equipment.
+    </p>
+    <div class="chart-container">
+      <canvas id="materialsChart" aria-label="Materials chart" role="img"></canvas>
+    </div>
+
+    <!-- <h2>Environment Tour Video</h2>
+    <p>Insert your own video tour of the play environment here.</p>
+    <div class="video-container">
+      <video controls>
+        <source src="videos/play_environment.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div> -->
+
+  <!-- Footnotes for Play Environments page -->
+  <!-- <div class="footnotes">
+    <ol>
+      <li id="footnote-5"><a href="https://example.com" data-tether-id="8779840127115†L52-L77">West Vancouver Schools – Reggio Emilia environment</a>.</li>
+      <li id="footnote-7"><a href="https://example.com" data-tether-id="510548272031228†L58-L67">Better Kid Care – Cultural competence</a>.</li>
+    </ol>
+  </div> -->
+
+  <script>
+    // Doughnut chart for materials mix
+    const materialsCtx = document.getElementById('materialsChart');
+    new Chart(materialsCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Natural materials', 'Open‑ended toys', 'Manufactured toys', 'Sensory equipment'],
+        datasets: [{
+          data: [45, 25, 15, 15],
+          backgroundColor: ['#2a9d8f','#e9c46a','#f4a261','#e76f51'],
+          borderColor: '#fff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          },
+          title: {
+            display: true,
+            text: 'Recommended Materials Mix for Play Environments'
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

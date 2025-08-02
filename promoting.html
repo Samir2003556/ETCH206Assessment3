@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promoting Infant and Toddler Development, Learning, and Wellbeing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Infant &amp; Toddler Education</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="play.html">Play Environments</a></li>
+        <li><a href="cognitive.html">Cognitive</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="emotional.html">Emotional</a></li>
+        <li><a href="language.html">Language &amp; Literacy</a></li>
+        <li><a href="perceptual.html">Perceptual</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Promoting Development, Learning &amp; Wellbeing</h1>
+    <p>
+      Promoting infant and toddler development starts with secure relationships. Have you ever noticed how eye contact or a gentle smile can make a child feel safe? Consistent, warm responses build trust and emotional security (Bowlby, 1988). Next, think about communication. What would you do if a baby babbled to you? Responding with “serve and return” interactions supports language and identity (EYLF V2.0 Outcome 1).
+    </p>
+    <p>
+      After that, safe and stimulating environments matter. How do you feel about using natural, familiar materials for children to explore (Arthur et al., 2023)? Play-based learning follows their curiosity, letting creativity and problem-solving grow (Pendergast & Garvis, 2023).
+    </p>
+    <p>
+      Finally, observing all areas of development helps plan for each child’s needs while calm spaces and gentle voices teach emotional regulation (Berk & Meyers, 2023). Have you thought about how your reactions shape a child’s sense of belonging? Small, mindful actions create lasting wellbeing.
+    </p>
+
+    <h2>Strategies Across Curriculum Areas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Domain</th>
+          <th>Cross‑Curriculum Strategies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cognitive</td>
+          <td>Provide problem‑solving tasks with blocks and loose parts; narrate cause‑and‑effect during water play; encourage sorting and categorising natural objects.</td>
+        </tr>
+        <tr>
+          <td>Social</td>
+          <td>Facilitate group songs and finger plays; model turn‑taking with balls; use puppets to practice greetings and emotions.</td>
+        </tr>
+        <tr>
+          <td>Emotional</td>
+          <td>Create a feelings board with photos; use books to talk about emotions; offer comfort objects and teach breathing techniques.</td>
+        </tr>
+        <tr>
+          <td>Language &amp; Literacy</td>
+          <td>Sit at eye level to engage in back‑and‑forth “serve and return” conversations; sing repetitive songs; read picture books daily.</td>
+        </tr>
+        <tr>
+          <td>Perceptual</td>
+          <td>Offer texture walls and sensory baskets; play with light and shadow; introduce scented herbs and safe tasting activities.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Holistic Development Radar</h2>
+    <p>
+      This radar chart illustrates how activities can simultaneously support multiple domains of
+      development. Higher values indicate a greater emphasis on that domain for a given activity.
+    </p>
+    <div class="chart-container">
+      <canvas id="radarChart" aria-label="Holistic development radar chart" role="img"></canvas>
+    </div>
+
+    <!-- <h2>Wellbeing in Action – Video</h2>
+    <p>Record a video showing how you promote wellbeing through integrated activities and responsive care. Replace the placeholder below.</p>
+    <div class="video-container">
+      <video controls>
+        <source src="videos/promoting_wellbeing.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div> -->
+
+  <!-- Footnotes for Promoting page -->
+  <!-- <div class="footnotes">
+    <ol>
+      <li id="footnote-2"><a href="https://example.com" data-tether-id="405790838248400†L270-L317">NAEYC – Caring relationships and brain development</a>.</li>
+      <li id="footnote-8"><a href="https://example.com" data-tether-id="724842971148379†L90-L115">Virtual Lab School – Social‑emotional development</a>.</li>
+    </ol>
+  </div> -->
+
+  <script>
+    // Radar chart for holistic development
+    const radarCtx = document.getElementById('radarChart');
+    new Chart(radarCtx, {
+      type: 'radar',
+      data: {
+        labels: ['Cognitive', 'Social', 'Emotional', 'Language', 'Perceptual'],
+        datasets: [
+          {
+            label: 'Painting to Music',
+            data: [6, 5, 5, 4, 3],
+            backgroundColor: 'rgba(231, 111, 81, 0.2)',
+            borderColor: '#e76f51',
+            pointBackgroundColor: '#e76f51'
+          },
+          {
+            label: 'Nature Walk',
+            data: [5, 4, 4, 5, 6],
+            backgroundColor: 'rgba(42, 157, 143, 0.2)',
+            borderColor: '#2a9d8f',
+            pointBackgroundColor: '#2a9d8f'
+          },
+          {
+            label: 'Puppet Show',
+            data: [3, 6, 4, 5, 2],
+            backgroundColor: 'rgba(233, 196, 106, 0.2)',
+            borderColor: '#e9c46a',
+            pointBackgroundColor: '#e9c46a'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom'
+          },
+          title: {
+            display: true,
+            text: 'Activities Supporting Multiple Domains'
+          }
+        },
+        scales: {
+          r: {
+            beginAtZero: true,
+            max: 7,
+            ticks: {
+              stepSize: 1
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

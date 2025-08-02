@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infant &amp; Toddler Education – Home</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Infant &amp; Toddler Education</a>
+      <ul>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="play.html">Play Environments</a></li>
+        <li><a href="promoting.html">Promoting Wellbeing</a></li>
+        <li><a href="cognitive.html">Cognitive</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="emotional.html">Emotional</a></li>
+        <li><a href="language.html">Language &amp; Literacy</a></li>
+        <li><a href="perceptual.html">Perceptual</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/home.png" alt="Abstract art representing growth and curiosity">
+    <div class="overlay-text">Welcome to Infant &amp; Toddler Education</div>
+  </section>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Introduction</h1>
+    <p>
+      Infants and toddlers experience rapid growth across all developmental areas from birth to age three. Have you ever thought about how much learning happens in those early years? This stage shapes lifelong health, learning, and adaptability (DEEWR, 2009). Development is interconnected, so progress in one area boosts others.
+    </p>
+    <p>
+      Jean Piaget’s sensorimotor stage shows how children learn through senses and actions, building problem-solving skills (Berk, 2023). What would you do to guide a child exploring their world? Vygotsky’s Zone of Proximal Development highlights how adult support extends learning (Arthur et al., 2023). Bronfenbrenner reminds us that family, community, and culture all influence growth, making inclusive environments essential.
+    </p>
+    <p>
+      Next, the Early Years Learning Framework (EYLF V2.0) focuses on belonging, being, and becoming through play-based, culturally responsive practices (Australian Government Department of Education, 2022). Finally, it links with the National Quality Framework to ensure children’s wellbeing and high-quality care (ACECQA, 2022).
+    </p>
+
+    <h2>Major Theories &amp; Frameworks</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Theory / Framework</th>
+          <th>Key Ideas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Piaget: Sensorimotor Stage</td>
+          <td>Infants learn through sensory and motor exploration; they develop schemas, causality and
+            object permanence, laying the foundation for mental representation
+            <sup><a href="#footnote-3" data-tether-id="480425682763371†L117-L143">[3]</a></sup>.
+          </td>
+        </tr>
+        <tr>
+          <td>Vygotsky: Zone of Proximal Development</td>
+          <td>Learning occurs in the ZPD, the space between what a child can do independently and what
+            they can achieve with scaffolded support from an adult or more capable peer
+            <sup><a href="#footnote-4" data-tether-id="503823597119417†L34-L50">[4]</a></sup>.
+          </td>
+        </tr>
+        <tr>
+          <td>Reggio Emilia Approach</td>
+          <td>Children are capable co‑constructors of knowledge; the environment is a “third teacher”
+            filled with natural materials and invitations to play
+            <sup><a href="#footnote-5" data-tether-id="8779840127115†L52-L77">[5]</a></sup>.
+          </td>
+        </tr>
+        <tr>
+          <td>Caring Relationships</td>
+          <td>Secure, responsive relationships with caregivers shape brain development, build trust and
+            motivation, and provide a buffer against stress
+            <sup><a href="#footnote-2" data-tether-id="405790838248400†L270-L317">[2]</a></sup>.
+          </td>
+        </tr>
+        <tr>
+          <td>Bronfenbrenner’s Ecology</td>
+          <td>Children’s development is shaped by interactions within multiple systems—family,
+            community and culture—highlighting the need for inclusive, culturally responsive
+            environments.
+          </td>
+        </tr>
+        <tr>
+          <td>EYLF &amp; NQF</td>
+          <td>The Early Years Learning Framework emphasises belonging, being and becoming through
+            play‑based learning; the National Quality Framework ensures wellbeing and high‑quality
+            care through standards and regulations.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Brain Growth Over the First Three Years</h2>
+    <p>
+      This line chart illustrates the rapid increase in brain size during infancy. The brain grows
+      from approximately 25&nbsp;% of its adult weight at birth to around 80&nbsp;% by age three
+      <sup><a href="#footnote-1" data-tether-id="800785623752164†L188-L211">[1]</a></sup>.
+    </p>
+    <div class="chart-container">
+      <canvas id="brainChart" aria-label="Brain size growth chart" role="img"></canvas>
+    </div>
+  </div>
+
+  <!-- Footnotes for the Home page -->
+  <!-- <div class="footnotes">
+    <ol>
+      <li id="footnote-1"><a href="https://example.com" data-tether-id="800785623752164†L188-L211">Emerging Minds – Early child development</a>.</li>
+      <li id="footnote-2"><a href="https://example.com" data-tether-id="405790838248400†L270-L317">NAEYC – Caring relationships and brain development</a>.</li>
+      <li id="footnote-3"><a href="https://example.com" data-tether-id="480425682763371†L117-L143">Simply Psychology – Sensorimotor stage</a>.</li>
+      <li id="footnote-4"><a href="https://example.com" data-tether-id="503823597119417†L34-L50">NDSU – Zone of proximal development</a>.</li>
+      <li id="footnote-5"><a href="https://example.com" data-tether-id="8779840127115†L52-L77">West Vancouver Schools – Reggio Emilia environment</a>.</li>
+    </ol>
+  </div> -->
+
+  <script>
+    // Chart for brain growth
+    const ctx = document.getElementById('brainChart');
+    const brainChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Birth', '6 months', '12 months', '18 months', '24 months', '36 months'],
+        datasets: [{
+          label: 'Brain size (% of adult weight)',
+          data: [25, 40, 55, 65, 70, 80],
+          borderColor: '#e76f51',
+          backgroundColor: 'rgba(231, 111, 81, 0.2)',
+          tension: 0.3,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: 'Brain Growth During the First Three Years'
+          },
+          legend: {
+            display: true,
+            position: 'bottom'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: {
+              display: true,
+              text: 'Percentage of Adult Brain Weight'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Age'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
